@@ -13,38 +13,48 @@ This script can be executed locally on a DirectAdmin server, but can also connec
 
 ## Usage:
 
-### Change the password of one user:
-`./da_changepass.php --user <username> [optional password]`
+* **Change the password of one user:**
 
-If no password is given, a random one will be generated
+  `./da_changepass.php --user <username> [optional password]`
 
-### Change the passwords for all users except the admin user:
-`./da_changepass.php --alluser`
+  _If no password is given, a random one will be generated_
 
-### Change the e-mail password for all e-mail accounts on the server:
-`./da_changepass.php --allmail`
+* **Change the passwords for all users except the admin user:**
 
-### Change all e-mail passwords for a specific domain:
-`./da_changepass.php --mail <domainname>`
+  `./da_changepass.php --alluser`
 
-### Change the e-mail password for a specific e-mail address:
-`./da_changepass.php --mail <e-mail address> [optional password]`
+* **Change the e-mail password for all e-mail accounts on the server:**
 
-If no password is given, a random one will be generated
+  `./da_changepass.php --allmail`
 
-### Change the ftp account password for all ftp accounts on the server:
-`./da_changepass.php --allftp`
+* **Change all e-mail passwords for a specific domain:**
 
-### Change all ftp account passwords for a specific domain:
-`./da_changepass.php --ftp <domainname>`
+  `./da_changepass.php --mail <domainname>`
 
-### Change the ftp account password for a specific account:
-`./da_changepass.php --ftp <ftpuser@domain> [optional password]`
+* **Change the e-mail password for a specific e-mail address:**
 
-If no password is given, a random one will be generated
+  `./da_changepass.php --mail <e-mail address> [optional password]`
 
-### Display a list of ftp or e-mail accounts:
-`./da_changepass.php --list <ftp | mail> [optional domain]`
+  _If no password is given, a random one will be generated._
 
-### Send a test e-mail:
-`./da_changepass.php --mailtest`
+* **Change the ftp account password for all ftp accounts on the server:**
+
+  `./da_changepass.php --allftp`
+
+* **Change all ftp account passwords for a specific domain:**
+
+  `./da_changepass.php --ftp <domainname>`
+
+* **Change the ftp account password for a specific account:**
+
+  `./da_changepass.php --ftp <ftpuser@domain> [optional password]`
+
+  _If no password is given, a random one will be generated._
+
+* **Display a list of ftp or e-mail accounts:**
+
+  `./da_changepass.php --list <ftp | mail> [optional domain]`
+
+* **Send a test e-mail:**
+
+  `./da_changepass.php --mailtest`
